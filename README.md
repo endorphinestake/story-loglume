@@ -1,5 +1,27 @@
-# story-loglume
+# Story Logs EFK Monitoring
 
+![Preview](./story-efk.png)
+
+> **Goal:** Step-by-step setup of centralized log collection and monitoring for **Story** nodes using Elasticsearch, Kibana, and Fluent Bit.
+
+## Contents
+
+1. [Requirements](#requirements)
+2. [Port check & opening](#port-check--opening)
+3. [Preparing servers](#preparing-servers)
+4. [Installing Elasticsearch & Kibana on Server A](#installing-elasticsearch--kibana-on-server-a)
+5. [Retrieving password & API key on Server A](#retrieving-password--api-key-on-server-a)
+6. [Installing Fluent Bit on Server B](#installing-fluent-bit-on-server-b)
+7. [Deploying Fluent Bit configurations on Server B](#deploying-fluent-bit-configurations-on-server-b)
+8. [Configuring ILM and indices on Server A](#configuring-ilm-and-indices-on-server-a)
+9. [Service checks & auto‑start](#service-checks--auto-start)
+10. [Working with Kibana UI](#working-with-kibana-ui)
+11. [Guest access to Kibana (read‑only)](#guest-access-to-kibana-read-only)
+12. [Adding a new node to Fluent Bit](#adding-a-new-node-to-fluent-bit)
+13. [Repository structure](#repository-structure)
+14. [Contacts & contribution](#contacts--contribution)
+
+---
 
 
 ## Requirements
@@ -63,7 +85,6 @@
    ```
 
    This ensures all system packages are up-to-date before installing the EFK components.
-
 
 ## Installing Elasticsearch & Kibana on Server A
 
