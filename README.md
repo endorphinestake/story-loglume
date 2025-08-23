@@ -23,7 +23,6 @@
 
 ---
 
-
 ## Requirements
 
 * Two servers running **Ubuntu 20.04+** (or later):
